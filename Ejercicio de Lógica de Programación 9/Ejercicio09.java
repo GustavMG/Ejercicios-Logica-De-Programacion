@@ -55,7 +55,11 @@ public class Ejercicio09 {
 		String palabraTraducida = diccionario.get(palabraIngresada);
 		
 		System.out.println(" ");
-		System.out.println("La traducción de tu palabra ingresada: " + palabraIngresada + " es: " + palabraTraducida);
+		if(palabraTraducida != null) {
+			System.out.println("La traducción de tu palabra ingresada: " + palabraIngresada + " es: " + palabraTraducida);
+		} else {
+			System.out.println("Lo sentimos, la palabra: " + palabraIngresada + " no existe en el diccionario, estamos trabajando en ello...");
+		}
 		
 		scanner.close();
 	}
